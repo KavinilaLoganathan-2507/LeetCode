@@ -35,6 +35,4 @@ Numbers with fewer than 4 digits contain no commas.
 
         return n - 999
 
-        class Solution:
-
     #return max(0, n - 999)
