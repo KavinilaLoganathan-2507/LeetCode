@@ -46,3 +46,14 @@ class Solution:
         for i, ch in enumerate(s, start=1):
             ans += (26 - (ord(ch) - ord("a"))) * i
         return ans
+
+
+class Solution:
+    def reverseDegree(self, s: str) -> int:
+        total = 0
+        for i, c in enumerate(s):
+            reverse_value = 26 - (ord(c) - ord('a'))
+            position = i + 1
+
+            total += reverse_value * position
+        return total
